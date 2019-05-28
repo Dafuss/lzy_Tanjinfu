@@ -3,28 +3,46 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/next"
-            android:layout_width="80dp"
+        <EditText
+            android:id="@+id/shuming"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:text="下一页"/>
-        <Button
-            android:id="@+id/sy"
-            android:layout_width="80dp"
+            android:hint="书名"/>
+        <EditText
+            android:id="@+id/chubanshe"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:layout_marginLeft="340dp"
-            android:layout_marginTop="-90dp"
-            android:text="上一页" />
-    </RelativeLayout>
-
-
+            android:hint="出版社"/>
+        <EditText
+            android:id="@+id/jiage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="价格"/>
+        <EditText
+            android:id="@+id/yema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="页码"/>
+        <EditText
+            android:id="@+id/zuozhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="作者"/>
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加"/>
+        <Button
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击查询书目信息"/>
+    </LinearLayout>
     <TextView
         android:id="@+id/textView3"
         android:layout_width="1dp"
